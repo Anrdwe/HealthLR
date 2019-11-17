@@ -1,0 +1,75 @@
+body {
+    font-family: roboto;
+   
+
+}
+
+*{padding:0;
+    margin:0;
+    font-family: Roboto;
+}
+
+.title{
+    
+    position: relative;
+    text-align: center;
+    font-size: 70pt;
+    top: 40%;
+    color: white;
+    font-style: thin;
+    padding-left: 10px;
+    padding-top: 1px;
+    font-weight: bold;
+    text-shadow: 2px 2px #263238;
+
+}
+
+.Header{
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    background-image: url("insurance_img.jpg");
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
+    
+}
+
+.Variable{
+    position: relative;
+    margin:auto;
+    width: 35%;
+    padding: 40px;
+}
+
+.bigbox{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50hv;
+    background-color: #eceff1;
+    color: darkslategrey;
+    top: 50px;
+
+}
+
+.bigbigbox{
+    position: relative;
+    background-color:#455a64;
+    width: 100%;
+    height: 1000px;
+    padding-top: 0px;
+
+}
+
+Label{
+    margin: 5px;
+}
+
+.cost{
+    position: relative;
+    text-align: center;
+    font-size: 40pt;
+    margin:auto;
+    color: white;
+}
