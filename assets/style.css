@@ -79,28 +79,30 @@ Label{
     position: relative;
     margin: auto;
     width: 35%;
-    top: 130px;
+    top: 230px;
 }
 .graph-intro-title{
-    position: relative;
+    position: absolute;
     margin: auto;
     color: #fb8c00 ;
     text-align: center;
-    top: 90px;
+    top: 880px;
+    left: 40%;
     font-size: 30pt;
 }
 
 .graph-intro-text{
-    position: relative;
+    position: absolute;
     margin: auto;
     color: white;
     text-align: center;
-    top: 100px;
+    top: 940px;
+    left: 30%;
     font-size: 18pt;
 }
 .graphs{
     position: absolute;
-    top: 960px;
+    top: 1040px;
     left: 33%;
 }
 
@@ -109,7 +111,7 @@ Label{
     text-align: center;
     margin: auto;
     font-size: 22pt;
-    top: 700px;
+    top: 770px;
     color: white;
 }
 
@@ -122,7 +124,7 @@ Label{
 .heatmap {
     position: relative;
     margin: auto;
-    top: 710px;
+    top: 800px;
     left: 380px;
     width: 50%;
     height: 50hv;
@@ -133,7 +135,7 @@ Label{
     text-align: center;
     margin: auto;
     font-size: 22pt;
-    top: 800px;
+    top: 820px;
     color: white;
 }
 
@@ -142,7 +144,7 @@ Label{
     margin: auto;
     width: 37%;
     height: 53hv;
-    top: 810px;
+    top: 830px;
     background-color: white;
     border-radius: 20px;
 }
