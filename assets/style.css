@@ -76,17 +76,18 @@ Label{
 }
 
 .drop-graphs{
-    position: relative;
+    position: absolute;
     margin: auto;
     width: 35%;
-    top: 230px;
+    left: 32.5%;
+    top: 930px;
 }
 .graph-intro-title{
     position: absolute;
     margin: auto;
     color: #fb8c00 ;
     text-align: center;
-    top: 880px;
+    top: 830px;
     left: 40%;
     font-size: 30pt;
 }
@@ -96,13 +97,13 @@ Label{
     margin: auto;
     color: white;
     text-align: center;
-    top: 940px;
+    top: 880px;
     left: 30%;
     font-size: 18pt;
 }
 .graphs{
     position: absolute;
-    top: 1040px;
+    top: 980px;
     left: 33%;
 }
 
