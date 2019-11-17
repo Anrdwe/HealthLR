@@ -50,14 +50,14 @@ body {
     background-color: #eceff1;
     color: darkslategrey;
     top: 50px;
-
+    border-radius: 20px;
 }
 
 .bigbigbox{
     position: relative;
     background-color:#455a64;
     width: 100%;
-    height: 1000px;
+    height: 2500px;
     padding-top: 0px;
 
 }
@@ -72,4 +72,82 @@ Label{
     font-size: 40pt;
     margin:auto;
     color: white;
+    top: 70px;
+}
+
+.drop-graphs{
+    position: relative;
+    margin: auto;
+    width: 35%;
+    top: 130px;
+}
+.graph-intro-title{
+    position: relative;
+    margin: auto;
+    color: #fb8c00 ;
+    text-align: center;
+    top: 90px;
+    font-size: 30pt;
+}
+
+.graph-intro-text{
+    position: relative;
+    margin: auto;
+    color: white;
+    text-align: center;
+    top: 100px;
+    font-size: 18pt;
+}
+.graphs{
+    position: absolute;
+    top: 960px;
+    left: 33%;
+}
+
+.heatmap-title{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 22pt;
+    top: 700px;
+    color: white;
+}
+
+.heatmap-box{
+    position: absolute;
+    margin: auto;
+    background-image: white;
+}
+
+.heatmap {
+    position: relative;
+    margin: auto;
+    top: 710px;
+    left: 380px;
+    width: 50%;
+    height: 50hv;
+}
+
+.table-title{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 22pt;
+    top: 800px;
+    color: white;
+}
+
+.table-box{
+    position: relative;
+    margin: auto;
+    width: 37%;
+    height: 53hv;
+    top: 810px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.table{
+    position: relative;
+    margin: auto;
 }

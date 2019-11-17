@@ -46,7 +46,7 @@ def TableWithEverything(max_rows=10):
     return html.Table([
         html.Thead(header),
         html.Tbody(rows)
-    ])
+    ], className='table')
 
 
 def ScatterAgeCharges():

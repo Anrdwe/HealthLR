@@ -46,22 +46,11 @@ app.layout = html.Div([
     html.Div([ 
     html.Label('HEIGHT(cm)'),
     dcc.Input(id='height', value='', type='text')], className = 'Variable'),
-    #html.Div('cm'),
-    #dcc.RadioItems(
-    #    id='heightMesure',
-    #    options=[{'label': i, 'value': i} for i in height_options]
-    #),
-
 
 #Weight textbox 
     html.Div([
     html.Label('WEIGHT(kg)'),
     dcc.Input(id='weight', value='', type='text')], className = 'Variable'),
-    #html.Div('kg'),
-    #dcc.RadioItems(
-    #    id='weightMesure',
-    #   options=[{'label': i, 'value': i} for i in weight_options]
-    #),
 
 #Children dropdown
    html.Div([
@@ -82,19 +71,16 @@ app.layout = html.Div([
             {'label': 'Smoker', 'value': '1'}],
     )], className = 'Variable')],
 
-    #html.Button('SUBMIT', id='button', className = 'Variable')],
-
     className='bigbox'),
-
-    html.Div('HELLOOO', className='cost'),
 
     html.Div( className = 'cost', id='predicted_charge'),
 
     html.Div('Data Exploration', className='graph-intro-title'),
-    html.Div('Variables affect health care charges to the insurer', className='graph-intro-text'),
+    html.Div('Variables that affect health care charges to the insurer', className='graph-intro-text'),
 
     dcc.Dropdown(
         id="graphs",
+        className='drop-graphs',
         options=[
             {'label': 'Age', 'value':'age'},
             {'label': 'Bmi', 'value':'bmi'},
@@ -102,20 +88,15 @@ app.layout = html.Div([
         ], value = 'age'
     ),
 
-    dcc.Graph(id="graph-output"),
+    dcc.Graph(id="graph-output", className='graphs'),
+    
+    html.Div('Heatmap', className='heatmap-title'),
+    html.Img(src=app.get_asset_url ('heatmap.jpg'), className = "heatmap"),
 
-    # html.H4(children='Health costs'),
-    # TableWithEverything(),
-    # html.Div('chares by age graph'),
-    # dcc.Graph(id='scatterAgeCharges', figure= ScatterAgeCharges()),
-    # html.Div('charges by bmi graph'),
-    # dcc.Graph(id='scatterBmiCharges', figure= ScatterBmiCharges()),
-    # html.Div('charges by smoker graph'),
-    # dcc.Graph(id='scatterSmokerCharges', figure= ScatterSmokerCharges())
-    ],
+    html.Div('Dataset Sample', className='table-title'),
+    html.Div([TableWithEverything()], className='table-box')],
     
     className='bigbigbox'),
-
 ])
 
 
@@ -141,9 +122,6 @@ def save_info(birthyear, height, weight, children, smoker):
     Output('graph-output', 'figure'),
     [Input('graphs', 'value')])
 def update_graph(name_graph):
-    #return ScatterBmiCharges()
-
-    #return graph_options[name_graph]
       if (name_graph == 'age'):
           return ScatterAgeCharges()
       elif (name_graph == 'bmi'):
