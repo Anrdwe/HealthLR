@@ -1,7 +1,5 @@
 body {
     font-family: roboto;
-   
-
 }
 
 *{padding:0;
@@ -10,7 +8,6 @@ body {
 }
 
 .title{
-    
     position: relative;
     text-align: center;
     font-size: 70pt;
@@ -42,15 +39,53 @@ body {
     padding: 40px;
 }
 
+.sex-radio{
+    position: relative;
+    margin:auto;
+    padding: 20px 20px 20px;
+}
+
+.birth-text{
+    position: relative;
+    margin:auto;
+    padding: 20px 20px 20px;
+}
+
+.weight-text{
+    position: relative;
+    margin:auto;
+    padding: 20px 20px 20px;
+}
+
+.height-text{
+    position: relative;
+    margin:auto;
+    padding: 20px 20px 20px;
+}
+
+.children-number-dropdown{
+    position: relative;
+    margin:auto;
+    padding: 20px 20px 20px;
+}
+
+.smoker-dropdown{
+    position: relative;
+    margin:auto;
+    padding: 20px 20px 20px;
+}
+
 .bigbox{
     position: relative;
     margin: auto;
     width: 50%;
-    height: 50hv;
+    height: 70hv;
     background-color: #eceff1;
     color: darkslategrey;
     top: 50px;
     border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px 20px 20px;
 }
 
 .bigbigbox{
@@ -59,52 +94,55 @@ body {
     width: 100%;
     height: 2500px;
     padding-top: 0px;
-
 }
-
 Label{
     margin: 5px;
 }
-
+.cost-box{
+    position: relative;
+    margin:auto;
+    height: 70px;
+    width: 60%;
+    top: 70px;
+    padding: 20px, 20px, 20px;
+}
 .cost{
     position: relative;
     text-align: center;
     font-size: 40pt;
     margin:auto;
     color: white;
-    top: 70px;
-}
-
-.drop-graphs{
-    position: absolute;
-    margin: auto;
-    width: 35%;
-    left: 32.5%;
-    top: 930px;
 }
 .graph-intro-title{
-    position: absolute;
+    position: relative;
     margin: auto;
     color: #fb8c00 ;
     text-align: center;
-    top: 830px;
-    left: 40%;
+    top: 80px;
     font-size: 30pt;
+    padding: 20px 20px 20px;
 }
-
 .graph-intro-text{
-    position: absolute;
+    position: relative;
     margin: auto;
     color: white;
     text-align: center;
-    top: 880px;
-    left: 30%;
+    top: 60px;
     font-size: 18pt;
+    padding: 20px 20px 20px;
+}
+.drop-graphs{
+    position: relative;
+    margin: auto;
+    width: 35%;
+    top: 30px;
+    padding: 20px 20px 20px;
 }
 .graphs{
     position: absolute;
-    top: 980px;
+    top: 840px;
     left: 33%;
+    
 }
 
 .heatmap-title{
@@ -112,7 +150,7 @@ Label{
     text-align: center;
     margin: auto;
     font-size: 22pt;
-    top: 800px;
+    top: 600px;
     color: white;
 }
 
@@ -125,7 +163,7 @@ Label{
 .heatmap {
     position: relative;
     margin: auto;
-    top: 800px;
+    top: 620px;
     left: 380px;
     width: 50%;
     height: 50hv;
@@ -136,7 +174,7 @@ Label{
     text-align: center;
     margin: auto;
     font-size: 22pt;
-    top: 820px;
+    top: 660px;
     color: white;
 }
 
@@ -145,9 +183,10 @@ Label{
     margin: auto;
     width: 37%;
     height: 53hv;
-    top: 830px;
+    top: 680px;
     background-color: white;
     border-radius: 20px;
+    padding: 20px 20px 20px;
 }
 
 .table{

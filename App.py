@@ -36,30 +36,29 @@ app.layout = html.Div([
     dcc.RadioItems(
         id='sex',
         options=[{'label': i, 'value': i} for i in sexe_options]
-    )], className = 'Variable'),
+    )], className = 'sex-radio'),
 #Birthday textbox, calender
     html.Div([   
     html.Label('BIRTHYEAR'),
-    dcc.Input(id='birthyear', value='', type='text')], className = 'Variable'),
+    dcc.Input(id='birthyear', value='', type='text')], className = 'birth-text'),
     
 #Height textbox
     html.Div([ 
     html.Label('HEIGHT(cm)'),
-    dcc.Input(id='height', value='', type='text')], className = 'Variable'),
+    dcc.Input(id='height', value='', type='text')], className = 'height-text'),
 
 #Weight textbox 
     html.Div([
     html.Label('WEIGHT(kg)'),
-    dcc.Input(id='weight', value='', type='text')], className = 'Variable'),
+    dcc.Input(id='weight', value='', type='text')], className = 'weight-text'),
 
 #Children dropdown
    html.Div([
-   html.Label ('# OF DEPENDANTS'),
+   html.Label ('# OF CHILDREN'),
     dcc.Dropdown(
         id='children',
         options = [{'label':i, 'value' : i} for i in dependents_options],
-    )], className = 'Variable'),
-
+    )], className = 'children-number-dropdown'),
 
 #smoker
     html.Div([
@@ -69,11 +68,13 @@ app.layout = html.Div([
         options=[
             {'label': 'Non-Smoker', 'value': '0'},
             {'label': 'Smoker', 'value': '1'}],
-    )], className = 'Variable')],
+    )], className = 'smoker-dropdown')],
 
     className='bigbox'),
 
-    html.Div( className = 'cost', id='predicted_charge'),
+    html.Div( 
+        html.Div(className = 'cost', id='predicted_charge'),
+        className='cost-box'),
 
     html.Div('Data Exploration', className='graph-intro-title'),
     html.Div('Variables that affect health care charges to the insurer', className='graph-intro-text'),
