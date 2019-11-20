@@ -132,6 +132,7 @@ def update_graph(name_graph):
       elif (name_graph == 'smoke'):
           return ScatterSmokerCharges()
 
+@app.route('/')
 
 if __name__ == '__main__':
     app.run_server(debug=True)
