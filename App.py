@@ -3,10 +3,12 @@ import dash_html_components as html
 import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
 from ML import costPredictor
-from Graphs import TableWithEverything, ScatterAgeCharges, ScatterBmiCharges, ScatterSmokerCharges
+#Graph contains the functions to display the Graphs
+from Graphs import DataTable, ScatterAgeCharges, ScatterBmiCharges, ScatterSmokerCharges
 
 app = dash.Dash(__name__)
 server=app.server
+
 
 sexe_options = ['Male', 'Female']
 
@@ -16,11 +18,11 @@ weight_options = ['lbs', 'kg']
 
 dependents_options = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-graph_options = [
-    {'age': ScatterAgeCharges(),
-    'bmi': ScatterBmiCharges(),
-    'smoke': ScatterSmokerCharges()}
-]
+# graph_options = [
+#     {'age': ScatterAgeCharges(),
+#     'bmi': ScatterBmiCharges(),
+#     'smoke': ScatterSmokerCharges()}
+# ]
 
 app.layout = html.Div([
    
@@ -28,7 +30,6 @@ app.layout = html.Div([
     html.Div([
         html.Div('HealthLR', className='title')], 
         className='Header'),
-
     html.Div([
     html.Div([   
 #Sexe radio button
@@ -96,7 +97,7 @@ app.layout = html.Div([
     html.Img(src=app.get_asset_url ('heatmap.jpg'), className = "heatmap"),
 
     html.Div('Dataset Sample', className='table-title'),
-    html.Div([TableWithEverything()], className='table-box'),
+    html.Div([DataTable()], className='table-box'),
     
     html.Div(className='Footer')],
     

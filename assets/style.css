@@ -177,28 +177,7 @@ Label{
 }
 
 
-table, td, th {  
-    border: 1px solid #ddd;
-    text-align: left;
-}
 
-table {
-    border-collapse: collapse;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 700px;
-    padding-bottom: 20px;
-}
-
-th, td {
-    padding: 10px;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;}
-
-tr:nth-child(odd) {background-color: #f2f2f2;}
 
 .Footer {
     height: 10vh;
