@@ -97,11 +97,11 @@ app.layout = html.Div([
     html.Img(src=app.get_asset_url ('heatmap.jpg'), className = "heatmap"),
 
     html.Div('Dataset Sample', className='table-title'),
-    html.Div([DataTable()], className='table-box'),
-    
-    html.Div(className='Footer')],
+    html.Div([DataTable()], className='table-box')],
     
     className='bigbigbox'),
+    
+    html.Div(className='Footer'),
 ])
 
 

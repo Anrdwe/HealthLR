@@ -30,7 +30,7 @@ regressor.fit(x_train, y_train)
 X2 = sm.add_constant(x_train)
 est = sm.OLS(y_train, X2)
 est2 = est.fit()
-print(est2.summary())
+#print(est2.summary())
 
 #print(x_test)
 #print(y_test)

@@ -14,45 +14,8 @@ df['charges'] = df['charges'].map(lambda x: '{0:.2f}'.format(x))
 df['bmi'] = df['bmi'].map(lambda x: '{0:.1f}'.format(x))
 table = df.values
 
-# def DataTable(dataframe, max_rows=10):
-#     header = []
-#     for col in dataframe.columns:
-#         header.append(html.Th(col))
-#     header = html.Tr(header)
-
-#     rows = []
-#     for i in range(min(len(dataframe), max_rows)):
-#         row = []
-#         for col in dataframe.columns:
-#             row.append(html.Td(dataframe.iloc[i][col]))
-#         rows.append(html.Tr(row))
-    
-#     return html.Table([
-#         html.Thead(header),
-#         html.Tbody(rows)
-#     ])
-
 def DataScatterPlot(dataframe, xi, yi):
     return px.scatter(dataframe, x=xi, y=yi, height=500, width=500)
-  
-#def DataDensityPlot():
-def TableWithEverything(max_rows=10):
-    header = []
-    for col in df.columns:
-        header.append(html.Th(col))
-    header = html.Tr(header)
-
-    rows = []
-    for i in range(min(len(df), max_rows)):
-        row = []
-        for col in df.columns:
-            row.append(html.Td(df.iloc[i][col]))
-        rows.append(html.Tr(row))
-    
-    return html.Table([
-        html.Thead(header),
-        html.Tbody(rows)
-    ], className='table')
 
 def DataTable():
     return dash_table.DataTable(
