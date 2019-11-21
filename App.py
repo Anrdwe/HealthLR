@@ -6,6 +6,7 @@ from ML import costPredictor
 from Graphs import TableWithEverything, ScatterAgeCharges, ScatterBmiCharges, ScatterSmokerCharges
 
 app = dash.Dash(__name__)
+server=app.server
 
 sexe_options = ['Male', 'Female']
 
