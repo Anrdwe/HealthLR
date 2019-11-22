@@ -32,7 +32,7 @@ Contains the App layout:
 10. DataTable component
 
 ## 2. Graphs.py
-Contains the functions that make the graphs and tables
+Contains the functions that make the graphs and tables <br>
 Functions exported to App.py:
 1. ScatterAgeCharges()
 2. ScatterBmiCharges()
@@ -40,6 +40,6 @@ Functions exported to App.py:
 4. DataTable()
 
 ## 3. ML.py
-Contains the Linear Regression to predict health care charges
+Contains the Linear Regression to predict health care charges <br>
 Function exported to App.py
 1. costPredictor(age, bmi, children, smoker)
