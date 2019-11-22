@@ -1,7 +1,8 @@
 # HealthLR
 
 ## Link to the web app
-Access the website [here](https://warm-retreat-63434.herokuapp.com/)
+The project is deployed with Heroky.
+Access the website [here](https://warm-retreat-63434.herokuapp.com/).
 
 ## Made during McGill CodeJam 2019, November 16th 2019
 for the Plotly, dash app challenge and Intact Insurance challenge.
