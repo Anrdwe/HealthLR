@@ -13,7 +13,7 @@ df['charges'] = df['charges'].map(lambda x: '{0:.2f}'.format(x))
 #cutting bmi to 1 decimal
 df['bmi'] = df['bmi'].map(lambda x: '{0:.1f}'.format(x))
 
-#function to make a figure property for scatterPlots
+#function to make a figure property for scatterPlots using express
 def DataScatterPlot(dataframe, xi, yi):
     return px.scatter(dataframe, x=xi, y=yi, height=500, width=500)
 
